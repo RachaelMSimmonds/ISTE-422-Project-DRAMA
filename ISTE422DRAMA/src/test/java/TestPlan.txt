@@ -1,0 +1,192 @@
+//List each method and then what is being tested.
+EdgeConnector:
+- Get End Point 1
+	- Does the first endpoint exist?
+	- What if the first endpoint does not exist?
+		- Return nothing or throw an exception?
+- Get End Point 2
+	- Does the second endpoint exist?
+	- What if the second endpoint does not exist?
+		- Return nothing or throw an exception?
+- Get End Style 1
+	- Does an end style exist?
+	- Can I get this end style?
+		- Return nothing or throw an exception?
+- Get End Style 2
+	- Does an end style exist?
+	- Can I get this end style?
+		- Return nothing or throw an exception?
+- Get IsEP1Field
+	- Does this field exist?
+	- Can I get this field?
+		- Return nothing or throw an exception?
+- Get IsEP2Field
+	- Does this field exist?
+	- Can I get this field?
+		- Return nothing or throw an exception?
+- Get IsEP1Table
+	- Does this table exist?
+	- Can I get this table?
+		- Return nothing or throw an exception?
+- Get IsEP2Table
+	- Does this table exist?
+	- Can I get this table?
+		- Return nothing or throw an exception?
+- Set IsEP1Field
+	- Does this field exist?
+	- Can I set this field?
+		- Return does not exist or throw an exception?
+- Set IsEP2Field
+	- Does this field exist?
+	- Can I set this field?
+		- Return does not exist or throw an exception?
+- Set IsEP1Table
+	- Does this table exist?
+	- Can I set this table?
+		- Return does not exist or throw an exception?
+- Set IsEP2Table
+	- Does this table exist?
+	- Can I set this table?
+		- Return does not exist or throw an exception?
+
+// Avery
+EdgeConvertCreateDDL:
+
+// Mitchell Sweet
+EdgeConvertFileParser:
+Parameterized Constructor
+	- Initialize class with file 
+testParseEdgeFile
+	- Does the parse function throw an error? 
+testResolveConnector
+	- Are the connectors resolved properly? 
+testParseSaveFile
+	- Is an error thrown when trying to save 
+testMakeArrays
+	- Are the edge tables and edge fields arrays populated? 
+testIsTableDup
+	- Does the function detect when there is a duplicate table? 
+	- Does the function know that there isn't a duplicate table? 
+testGetEdgeTables
+	- Does the function return anything? 
+testGetEdgeFields
+	- Does the function return anything? 
+testOpenFile
+	- Does a file open successfully?
+
+// Anna Jacobsen
+----- EdgeField -----
+Parameterized Constructor 
+	- Can you intialize testName to an empty string?
+	- Can you initialize numFigure to zero or a negative number?
+getNumFigure 
+	- Is the correct numFigure value returned?
+getName
+	- Is the correct table name returned/
+	- For a table with an empty string for a name, does it return an empty String?
+getTableID
+	- Is the correct table ID returned?
+setTableID
+	- Can you set the table ID? 
+	- Can you set the table ID to zero?
+	- Can you set the table ID to a negative number?
+getTableBound
+	- Is the correct tableBound value returned?
+setTableBound
+	- Can you set the table boundary? 
+	- Can you set the table boundary to zero?
+	- Can you set the table boundary to a negative number?
+getFieldBound
+	- Is the correct field boundary returned?
+setFieldBound
+	- Can you set the field boundary? 
+	- Can you set the field boundary to zero?
+	- Can you set the field boundary to a negative number?
+getDisallowNull
+	- Is the correct boolean value returned for disallowNull?
+setDisallowNull
+	- Can you set the disallowNull property?
+getIsPrimaryKey
+	- Is the correct boolean value returned for isPrimaryKey?
+setIsPrimaryKey
+	- Can you set the isPrimaryKey property?
+getDefaultValue
+	- Is the correct default value returned?
+setDefaultValue
+	- Can you set the default value of the field to a String?
+	- Can you set the default value of the field to an empty String?
+getVarcharValue
+	- Is the expected varchar value returned?
+setVarcharValue
+	- Can you set the varCharValue? 
+	- Can you set the varCharValue to zero?
+	- Can you set the varCharValue to a negative number?
+getDataType
+	- Is the expected data type returned?
+setDataType
+	- Can you set the dataType? 
+	- Can you set the dataType to a negative number?
+	- Can you set the dataType to a number greater than the length of 	  the strDataType array? (3)
+toString
+	- Does the toString method return an existing value?
+	- Does it return the expected output?
+
+
+// Rachael Simmonds
+----- EdgeTable -----
+- Get numFigure1
+	- Does numFigure1 exist?
+	- Can I get numFigure1?
+		- Return does not exist or throw an exception?
+- Get numFigure2
+	- Does numFigure2 exist?
+	- Can I get numFigure2?
+		- Return does not exist or throw an exception?
+- Get numName1
+	- Does numName1 exist?
+	- Can I get numName1?
+		- Return does not exist or throw an exception?
+- Get numName2
+	- Does numName2 exist?
+	- Can I get numName2?
+		- Return does not exist or throw an exception?
+- addRelatedTable
+	- Can I add a related table? 
+	- Did the related table add?
+		- Return does not exist or throw an exception?
+- Get relatedTablesArray
+	- Can I get a related table array? 
+	- Does the related table array exist?
+		- Return does not exist or throw an exception?
+- Get relatedFieldsArray
+	- Can I get a related field array?
+	- Does the related field array exist?
+		- Return does not exist or throw an exception?
+- Set relatedField
+	- Can I set the related field?
+	- Was the related field updated or set?
+		- Return does not exist or throw an exception?
+- Get nativeFieldsArray
+	- Can I get the native fields array?
+	- Does the native fileds array exist?
+		- Return does not exist or throw an exception?
+- addNativeField
+	- Can I add more native fields to the array?
+	- Does the array exist?
+		- Return does not exist or throw an exception?
+- moveFieldUp
+	- Can I move a field up?
+	- Does the field exist?
+		- Return does not exist or throw an exception?
+- moveFieldDown
+	- Can I move a field down?
+	- Does the field exist?
+		- Return does not exist or throw an exception?
+- makeArrays
+	- Can I make arrays?
+	- Does the array exist?
+		- Return does not exist or throw an exception?
+- toString
+	- Can I use the toString on an array?
+	- Does the string match and exist?
+		- Return does not exist or throw an exception?
